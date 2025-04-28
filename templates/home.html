@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Home</title>
+</head>
+
+<body class="home-page">
+    <header>
+     <div class="text">
+         <h1>Welcome</h1> </div>
+    <nav>
+        <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+<br><br>
+     <img src="{{ url_for('static', filename='img/bg1.jpg') }}">
+
+    <br><br>
+
+    <h1>HALO SELAMAT DATANG DI WEBSITE AKU </h1><br><br>
+    <div class="container">
+    <div class="text">
+    <p>Nama                  : Kintan Apriliani A </p>
+    <p>Tempat, Tanggal Lahir : 29 April 2005 </p>
+        <p>Alamat                : Jalan Caringin </p></div>
+    <div class="image">
+    <img src="{{ url_for('static', filename='img/kin.jpg') }}"  width="300">
+    </div>
+    </div>
+
+    <p>Mahasiswa aktif Teknik Elektro Universitas Padjadjaran dengan semangat belajar tinggi dan minat pada inovasi teknologi.
+Memiliki rasa ingin tahu yang besar dan suka dengan tantangan baru. Memiliki keinginan untuk mengembangkan kemampuan akademik dan
+organisasi di lingkungan kampus.  </p>
+
+</body>
+
+<footer class="footer">
+  <div class="footer-images">
+    <img src="{{ url_for('static', filename='img/bg.jpg') }}" width="200">
+    <img src="{{ url_for('static', filename='img/bg2.jpg') }}" width="200">
+    <img src="{{ url_for('static', filename='img/bg3.jpg') }}" width="200">
+    <img src="{{ url_for('static', filename='img/bg4.jpg') }}" width="200">
+    <img src="{{ url_for('static', filename='img/bg5.jpg') }}" width="200">
+    <img src="{{ url_for('static', filename='img/bg6.jpg') }}" width="200">
+
+  </div>
+
+
+</footer>
+</html>

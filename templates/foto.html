@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Foto Luthfi 2001</h1>
+    <img src="{{ url_for('static', filename='img/foto.jpg') }}" alt="Foto Saya bersama gerard ways" width="300">
+    <nav>
+        <a href="{{ url_for('home') }}">Home</a> |
+        <a href="{{ url_for('biodata') }}">Biodata</a> |
+        <a href="{{ url_for('kontak') }}">Kontak</a>
+    </nav>
+</body>
+</html>
